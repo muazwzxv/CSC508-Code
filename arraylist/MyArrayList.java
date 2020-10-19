@@ -93,6 +93,14 @@ public class MyArrayList<T> extends MyAbstractArrayList<T> {
 		}
 		return result.toString() + "]";
 	}
+
+	public void trimToSize() {
+		if (size != data.length) {
+			T[] newaData = (T[]) (new Object[size]);
+			System.arraycopy(data, 0);
+			data = newData;
+		}
+	}
 }
 
 
