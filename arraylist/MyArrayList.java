@@ -83,6 +83,16 @@ public class MyArrayList<T> extends MyAbstractArrayList<T> {
 		data[index] = t;
 		return before;
 	}
+
+	public String toString() {
+		StringBuilder result = new StringBuilder("[");
+
+		for (int i =0 ; i < size(); i++) {
+			result.append(data[i]);
+			if (i < size -1) result.append(". ");
+		}
+		return result.toString() + "]";
+	}
 }
 
 
