@@ -6,6 +6,7 @@ public class main {
 		// with generic type safety
 		MyArrayList<Student> list = new MyArrayList<Student>();
 		list.add(data);
+		// list.add(7);
 		System.out.println("Generic \n" + list);
 
 		// With non generic type safety
@@ -35,5 +36,9 @@ public class main {
 		list.add(new Student("Zetty", 21, "CSC230", 4));
 
 		return list;
+	}
+
+	static void askNumber() {
+
 	}
 }
