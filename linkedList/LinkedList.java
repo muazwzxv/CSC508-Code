@@ -9,7 +9,7 @@ public class LinkedList {
 	}
 
 	public boolean isEmpty() {
-		return true;
+		return (this.first == null);
 	}
 
 	public void insertAtFront(Object data) {
@@ -18,5 +18,17 @@ public class LinkedList {
 		} else {
 			this.first = new Node(data, this.first);
 		}
+	}
+
+	public void insertAtBack(Object data) {
+		if (isEmpty()) {
+			this.first = this.last = new Node(data);
+		} else {
+			this.last = this.last.next = new Node(data);
+		}
+	}
+
+	public Object removeFromFront() throws EmptyListException {
+
 	}
 }
