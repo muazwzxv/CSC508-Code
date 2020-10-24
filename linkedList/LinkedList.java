@@ -29,6 +29,42 @@ public class LinkedList {
 	}
 
 	public Object removeFromFront() throws EmptyListException {
+		Object remove = null;
 
+		if (isEmpty())
+			throw new EmptyListException();
+
+		remove = this.first;
+		if (this.first.equals(last)) {
+			this.first = this.last = null;
+		} else {
+			this.first = this.first.next;
+		}
+
+		return remove;
+	}
+
+	public Object removeFromBack() throws EmptyListException {
+		Object remove = null;
+
+		if (isEmpty())
+			throw new EmptyListException();
+
+		remove = this.last.data;
+		if (this.first.equals(this.last))
+			this.first = this.last = null;
+		else {
+			this.current = this.first;
+
+			// Iterate to the node just before the last node
+			while (this.current != this.last)
+				this.current = this.current.next;
+
+			// Reassigned the new lastnode and break next chain of the removed nodes
+			this.last = current;
+			current.next = null;
+		}
+
+		return remove;
 	}
 }
