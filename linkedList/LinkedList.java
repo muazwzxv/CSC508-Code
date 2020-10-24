@@ -67,4 +67,20 @@ public class LinkedList {
 
 		return remove;
 	}
+
+	public Object getFirst() throws EmptyListException {
+		if (isEmpty())
+			throw new EmptyListException();
+
+		return this.first.data;
+	}
+
+	public Object getNext() {
+		if (this.current != this.last) {
+			current = current.next;
+			return current.data;
+		} else {
+			return null;
+		}
+	}
 }
