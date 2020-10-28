@@ -1,6 +1,6 @@
 package book;
 
-public class Book {
+public class Book extends Object {
 
 	private String title;
 	private String publisher;
@@ -45,4 +45,9 @@ public class Book {
 	public void setYearPublished(int yp) {
 		this.yearPublished = yp;
 	}
+
+	// public String toString() {
+	// 	return "\n Title: " + this.title + "\n Published: " + this.publisher + "\n Price: RM" + this.price + "\n Year: "
+	// 			+ this.yearPublished;
+	// }
 }
