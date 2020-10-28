@@ -1,6 +1,6 @@
 package book;
 
-public class Book{
+public class Book {
 
 	private String title;
 	private String publisher;
@@ -8,12 +8,12 @@ public class Book{
 	private int yearPublished;
 
 	public Book(String t, String p, double price, int y) {
-		this.title = title;
+		this.title = t;
 		this.publisher = p;
 		this.price = price;
 		this.yearPublished = y;
 	}
-	
+
 	public String getTitle() {
 		return this.title;
 	}
