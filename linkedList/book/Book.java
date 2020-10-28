@@ -1,6 +1,7 @@
 package book;
 
-public class Book {
+public class Book{
+
 	private String title;
 	private String publisher;
 	private double price;
@@ -29,7 +30,7 @@ public class Book {
 		return this.yearPublished;
 	}
 
-	public void setTitle(String t)) {
+	public void setTitle(String t) {
 		this.title = t;
 	}
 
