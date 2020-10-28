@@ -1,4 +1,4 @@
-package generics;
+package userGenericLinkedList;
 
 public class Node<T> {
 	T data;
