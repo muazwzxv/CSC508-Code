@@ -46,8 +46,8 @@ public class Book extends Object {
 		this.yearPublished = yp;
 	}
 
-	// public String toString() {
-	// 	return "\n Title: " + this.title + "\n Published: " + this.publisher + "\n Price: RM" + this.price + "\n Year: "
-	// 			+ this.yearPublished;
-	// }
+	public String toString() {
+		return "\n Title: " + this.title + "\n Published: " + this.publisher + "\nPrice: RM" + this.price + "\n Year: "
+				+ this.yearPublished;
+	}
 }

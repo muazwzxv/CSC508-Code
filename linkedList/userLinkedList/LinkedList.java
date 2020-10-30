@@ -10,6 +10,18 @@ public class LinkedList {
 		this.first = this.last = null;
 	}
 
+	public Node getHeadNode() {
+		return this.first;
+	}
+
+	public Node getNext(Node n) {
+		return n.next;
+	}
+
+	public Node getTailNode() {
+		return this.last;
+	}
+
 	public boolean isEmpty() {
 		return (this.first == null);
 	}
@@ -77,12 +89,13 @@ public class LinkedList {
 		return this.first.data;
 	}
 
-	public Object getNext() {
+	public Node getNext() {
 		if (this.current != this.last) {
 			current = current.next;
-			return current.data;
+			return current;
 		} else {
 			return null;
 		}
 	}
+
 }
