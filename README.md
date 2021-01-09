@@ -5,6 +5,11 @@
 ### Data Structures
 - [X]  ArrayList
 - [X]  LinkedList
-- [ ]  Queue
-- [ ]  Stack
-- [ ]  Recursion
+- [X]  Queue
+- [X]  Stack
+- [X]  Recursion
+
+
+### Sorting Algorithm
+- Selection Sort [notes](./sorting/selectionSort/notes.md) 
+- Merge sort [notes](./sorting/mergeSort/notes.md)
