@@ -12,4 +12,4 @@
 
 ### Sorting Algorithm
 - Selection Sort [notes](./sorting/selectionSort/notes.md) 
-- Merge sort [notes](./sorting/mergeSort/notes.md)
+- Merge sort [notes](./sorting/mergeSort/mergeSort.md)
