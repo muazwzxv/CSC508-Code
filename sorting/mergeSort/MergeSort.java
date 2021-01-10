@@ -37,21 +37,21 @@ public class MergeSort {
 
   public static void merge(int arr[], int leftArray[], int rightArray[], int left, int right) {
 
-    int i = 0;
-    int j = 0;
-    int k = 0;
+    int leftPointer = 0;
+    int rightPointer = 0;
+    int mainPointer = 0;
 
-    while (i < left && j < right) {
-      if (leftArray[i] <= rightArray[j]) 
-        arr[k++] = leftArray[i++];
+    while (leftPointer < left && rightPointer < right) {
+      if (leftArray[leftPointer] <= rightArray[rightPointer]) 
+        arr[mainPointer++] = leftArray[leftPointer++];
       else 
-        arr[k++] = rightArray[j++];
+        arr[mainPointer++] = rightArray[rightPointer++];
     }
 
-    while(i < left) 
-      arr[k++] = leftArray[i++];
+    while(leftPointer < left) 
+      arr[mainPointer++] = leftArray[leftPointer++];
 
-    while(j < right) 
-      arr[k++] = rightArray[j++];
+    while(rightPointer < right) 
+      arr[mainPointer++] = rightArray[rightPointer++];
   }
 }
